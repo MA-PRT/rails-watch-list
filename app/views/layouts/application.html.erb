@@ -11,6 +11,10 @@
   </head>
 
   <body>
+    <nav class="navbar content-justify-between bg-light">
+      <h2><%= link_to "My lists", root_path, class: "text-decoration-none text-black ms-3" %></h2>
+      <%= link_to "New list", new_list_path, class: "btn btn-primary me-3" %>
+    </nav>
     <%= yield %>
   </body>
 </html>

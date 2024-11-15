@@ -1,0 +1,10 @@
+<h1>Bookmarks#new</h1>
+<p>Select movies of your choice</p>
+
+<div>
+  <%= simple_form_for [@list, @bookmark] do |f| %>
+    <%= f.association :movie %>
+    <%= f.input :comment %>
+    <%= f.submit %>
+  <% end %>
+</div>
